@@ -1,17 +1,7 @@
-# vakyavahan
+# VakyaVahan Client
 
-A new Flutter project.
+VakyaVahan (वाक्य वाहन), which translates to "carrier of words" in Sanskrit, is a robust SMS API designed to streamline and elevate your mobile communication. VakyaVahan empowers you to send text messages with efficiency and purpose.
 
-## Getting Started
+## Donate
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# vakyavahan_client
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/sinhapaurush)
