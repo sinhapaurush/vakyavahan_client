@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:vakyavahan/constants.dart';
 import 'package:vakyavahan/functions/maths.dart';
+import 'package:vakyavahan/screens/about.dart';
+import 'package:vakyavahan/screens/config.dart';
+import 'package:vakyavahan/screens/home.dart';
 import './drawer_item.dart';
 
 class AppScaffold extends StatelessWidget {
@@ -22,13 +25,18 @@ class AppScaffold extends StatelessWidget {
                 DrawerButtonCustom(
                   icon: Icons.home,
                   label: "Home",
+                  target: HomeScreen(),
                 ),
                 DrawerButtonCustom(
                   icon: Icons.info,
                   label: "About",
+                  target: AboutScreen(),
                 ),
                 DrawerButtonCustom(
-                    icon: Icons.build, label: "API Configurations"),
+                  icon: Icons.build,
+                  label: "API Configurations",
+                  target: ConfigScreen(),
+                ),
               ],
             ),
             SizedBox(
