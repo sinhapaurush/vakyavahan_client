@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:vakyavahan/constants.dart';
+import 'package:vakyavahan/widgets/button.dart';
 import 'package:vakyavahan/widgets/layout.dart';
+import 'package:vakyavahan/widgets/spacing.dart';
+import 'package:vakyavahan/widgets/textbox.dart';
 
 class ConfigScreen extends StatelessWidget {
   const ConfigScreen({super.key});
@@ -18,11 +22,13 @@ class ConfigScreenState extends StatefulWidget {
 
 class _ConfigScreenState extends State {
   final TextEditingController userNameController = TextEditingController();
+  final TextEditingController orgNameController = TextEditingController();
+  final TextEditingController authKeyController = TextEditingController();
 
   String username = "";
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
     userNameController.addListener(() {
       setState(() {
@@ -36,15 +42,31 @@ class _ConfigScreenState extends State {
     return SingleChildScrollView(
       child: Column(
         children: [
-          Text("${username}"),
-          TextField(
+          const Spacing(height: 10),
+          TextBox(
             controller: userNameController,
+            label: "Name",
+            hint: "Your Name",
           ),
-          MaterialButton(onPressed: () {
-            setState(() {
-              username = userNameController.text;
-            });
-          })
+          const Spacing(height: 10),
+          TextBox(
+            controller: orgNameController,
+            label: "Organisation Name",
+            hint: "eg: ABC Ltd.",
+          ),
+          const Spacing(height: 40),
+          TextBox(
+            controller: authKeyController,
+            label: "Authentication Key",
+            hint: "******",
+            readOnly: true,
+          ),
+          PrimaryButton(
+            text: "Save",
+            ontap: () {
+              debugPrint("Hi");
+            },
+          )
         ],
       ),
     );

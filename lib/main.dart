@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vakyavahan/constants.dart';
 import 'package:vakyavahan/screens/home.dart';
+import 'package:vakyavahan/screens/signup.dart';
 
 void main() {
   runApp(const VakyaVahan());
@@ -8,10 +9,15 @@ void main() {
 
 class VakyaVahan extends StatelessWidget {
   const VakyaVahan({Key? key}) : super(key: key);
+
+  void initState(){
+    
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const HomeScreen(),
+      home: SignUpScreen(),
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
         colorScheme: const ColorScheme(

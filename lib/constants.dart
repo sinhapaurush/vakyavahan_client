@@ -10,3 +10,5 @@ const String appName = "VakyaVahan";
 
 const String githubClient = "https://github.com/sinhapaurush/vakyavahan_client";
 const String githubServer = "https://github.com/sinhapaurush/vakyavahan_backend";
+
+const String uriRoot = "http://192.168.95.71:3000";
